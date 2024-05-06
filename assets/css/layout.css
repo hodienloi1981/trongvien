@@ -1,0 +1,78 @@
+.tv-header
+{
+    height: 60px;
+}
+nav.mainmenu
+{
+    position: relative;
+    height: 50px;
+}
+nav.mainmenu button.tv-toggler
+{
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+nav.mainmenu ul.tv-menu
+{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    top: 110px;
+    left: 0;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: all 0.5s linear;
+}
+nav.mainmenu ul.show
+{
+    transform: translateX(0px);
+    opacity: 1;
+    transition: all 0.5s linear;
+}
+/* nav.mainmenu ul.tv-menu>li
+{
+    border-bottom: 1px solid #c1c1c1;
+}
+nav.mainmenu ul.tv-menu>li:last-child
+{
+    border-bottom: none;
+} */
+nav.mainmenu ul.tv-menu>li>a
+{
+    display: block;
+    text-align: center;
+    padding: 5px 0px;
+    text-decoration: none;
+    color: white;
+}
+nav.mainmenu ul.tv-menu>li>a:hover
+{
+    background-color: blue;
+}
+/* nav.mainmenu ul.tv-menu::after
+{
+    content: "";
+    display: table;
+    clear: both;
+}
+nav.mainmenu ul.tv-menu>li
+{
+    float: left;
+}
+nav.mainmenu ul.tv-menu>li a
+{
+    display: inline-block;
+    padding: 7px 10px;
+    text-decoration: none;
+    color: white;
+} */
