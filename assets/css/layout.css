@@ -39,14 +39,6 @@ nav.mainmenu ul.show
     opacity: 1;
     transition: all 0.5s linear;
 }
-/* nav.mainmenu ul.tv-menu>li
-{
-    border-bottom: 1px solid #c1c1c1;
-}
-nav.mainmenu ul.tv-menu>li:last-child
-{
-    border-bottom: none;
-} */
 nav.mainmenu ul.tv-menu>li>a
 {
     display: block;
@@ -59,20 +51,48 @@ nav.mainmenu ul.tv-menu>li>a:hover
 {
     background-color: blue;
 }
-/* nav.mainmenu ul.tv-menu::after
-{
-    content: "";
-    display: table;
-    clear: both;
-}
-nav.mainmenu ul.tv-menu>li
-{
-    float: left;
-}
-nav.mainmenu ul.tv-menu>li a
-{
-    display: inline-block;
-    padding: 7px 10px;
-    text-decoration: none;
-    color: white;
-} */
+
+@media screen and (min-width: 768px) {
+     .tv-header
+    {
+        height: auto;
+    }
+    nav.mainmenu
+    {
+        height: auto;
+    }
+    nav.mainmenu button.tv-toggler
+    {
+        display: none;
+    }
+    
+    nav.mainmenu ul.tv-menu
+    {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        position: static;
+        height: auto;
+        width: 100%;
+        background-color: rgb(33,37,41);
+        transform: none;
+        opacity: 1;
+    }
+    nav.mainmenu ul.tv-menu::after
+    {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    nav.mainmenu ul.tv-menu>li
+    {
+        float: left;
+    }
+    nav.mainmenu ul.tv-menu>li a
+    {
+        display: inline-block;
+        padding: 7px 10px;
+        text-decoration: none;
+        color: white;
+    } 
+  }
